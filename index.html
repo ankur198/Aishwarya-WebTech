@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Polling</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Instantly create a <b>Free Poll!</b></h1>
+        <form>
+            <fieldset>
+                <legend>
+                    <b>Type your poll question here:</b>
+                    <input type="text" name="question">
+                </legend>    
+                <legend>
+                    <b>Add upto 10 possible answers to your question:</b>
+                    <ul id="field">
+                    </ul>
+                    <input type="button" id="add" value="+Add field" onclick="addfield()">
+                </legend>
+            </fieldset><br>
+            <input type="button" id="poll" value="Create your Poll">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

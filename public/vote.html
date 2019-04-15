@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Polling</title>
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="vote.css">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="styel/vote.css">
 </head>
+
 <body>
     <div>
         <h1>Vote in this Poll</h1>
         <div>
             <fieldset>
-                <legend><h3>Question</h3></legend>
-                <form id="addr">
-                    <input type="radio">option<br>
+                <legend>
+                    <h3 id="ques">Question</h3>
+                </legend>
+                <form id="options">
                 </form>
             </fieldset><br>
             <div id="btn">
-                <input type="button" value="Vote" id="vote">
-                <input type="button" value="View" id="view">
+                <a class="button" id="view">View</a>
+                <input type="checkbox" id="Multiple" checked>Only one vote
             </div>
         </div>
     </div>
-<script src="vote.js"></script>
+
+    <script src="script/script.js"></script>
+    <script src="script/vote.js"></script>
 </body>
+
 </html>
